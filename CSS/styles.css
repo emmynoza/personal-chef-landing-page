@@ -1,80 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&family=Ubuntu&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Ubuntu&display=swap");
+@import url(/CSS/media.css);
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-h1,h2, h3,h4, h5, h6{
-font-family: 'Playball', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playball", cursive;
 }
 /* Header */
 .page_header {
-    background-color: #0A0908;
-    
+  position: relative;
 }
 
-/* Nav Bar */
+/* Nav Bar mobile*/
+.navbar {
+  position: fixed;
+  background-color: rgba(10, 9, 8, 0.699);
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  margin: 10vh 0;
+}
+
+.navbar_item {
+  list-style: none;
+  font-family: "ubuntu", sans-serif;
+}
+
+.navbar_item a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.navbar_item a:hover {
+  text-decoration: underline;
+  color: #36da21;
+  font-size: 2.5rem;
+}
 
 /* showcase */
 .main_showcase {
-    background: url(/img/thai-food.jpg) center no-repeat;
-    background-size: cover;
-    height: 100vh;
-    border-bottom: 5px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background: url(/img/thai-food.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  border-bottom: 5px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .showcase_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.788);
-    padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.788);
+  padding: 0 5%;
 }
 
 .showcase_content h1 {
-    font-size: 20vw;
-    color: red;
-    text-decoration: underline;
-    
+  font-size: 20vw;
+  color: red;
+  text-decoration: underline;
 }
 
 .showcase_content span {
-    font-size: 7vw;
-    color: white;
-        
+  font-size: 7vw;
+  color: white;
 }
 
-.showcase_content .book_now_btn{
-    margin: 5%;
-    padding: 2%;
-    border-radius: 10px;
-    background-color: white;
-    font-size: 8vw;
-    background: red;
-    color: white;
-    font-family: 'Playball', cursive;
+.showcase_content .book_now_btn {
+  margin: 5%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 8vw;
+  background: red;
+  color: white;
+  font-family: "Playball", cursive;
 }
-
 
 /* Sections */
 section {
-    height: 100vh;
-    border-bottom: 5px solid red;
+  height: 100vh;
+  border-bottom: 5px solid red;
 }
 /* Footer */
 
 .page_footer {
-    background-color: #0A0908;
-    min-height: 5vh;
-    color: #fff;
+  background-color: #0a0908;
+  min-height: 5vh;
+  color: #fff;
 }
