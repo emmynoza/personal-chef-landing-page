@@ -20,6 +20,7 @@ h6 {
 /* Header */
 .page_header {
   position: relative;
+  display: none;
 }
 
 /* Nav Bar mobile*/
@@ -118,13 +119,28 @@ section {
   background-color: rgba(255, 255, 255, 0.685);
 
   margin: 0 5vw;
-  padding: 5vh 5vw;
+  padding: 5vh 7vw;
+  border-radius: 10px;
 }
 
-.landing_container p {
+.services .landing_container p {
   margin: 5vh;
 }
 
+.landing_container li {
+  margin: 5%;
+  list-style: square;
+}
+
+/* cooking style */
+
+.cooking_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: center/ cover url(/img/Ingredients.jpg);
+}
 /* Footer */
 
 .page_footer {
