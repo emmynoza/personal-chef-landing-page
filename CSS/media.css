@@ -18,7 +18,7 @@
 
   /* desktop nav-bar */
   .page_header .navbar {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.849);
     height: 10vh;
   }
   .navbar .navbar_list {
