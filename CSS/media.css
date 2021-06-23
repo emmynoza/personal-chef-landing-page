@@ -1,0 +1,52 @@
+@media (min-width: 500px) {
+  .main_showcase .showcase_content h1 {
+    font-size: 16vw;
+  }
+  .main_showcase .showcase_content span {
+    font-size: 4vw;
+  }
+
+  .main_showcase .showcase_content .book_now_btn {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .main_showcase .showcase_content h1 {
+    font-size: 13vw;
+  }
+
+  /* desktop nav-bar */
+  .page_header .navbar {
+    background-color: black;
+    height: 10vh;
+  }
+  .navbar .navbar_list {
+    flex-direction: row;
+
+    height: 10vh;
+
+    justify-content: flex-end;
+    margin: 0;
+    padding-right: 5vw;
+  }
+
+  .navbar_list .navbar_item a {
+    font-size: 1.3em;
+    margin: 20px;
+  }
+
+  .navbar_list .navbar_item a:hover {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main_showcase .showcase_content h1 {
+    font-size: 10vw;
+  }
+
+  .main_showcase .showcase_content span {
+    font-size: 4vw;
+  }
+}
