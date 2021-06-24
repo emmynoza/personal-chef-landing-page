@@ -103,7 +103,7 @@ h6 {
 
 /* Sections */
 section {
-  height: 100vh;
+  min-height: 100vh;
   border-bottom: 5px solid red;
 }
 
@@ -188,10 +188,20 @@ section {
 }
 .about p {
   width: fit-content;
+  line-height: 1.5em;
+  font-weight: bold;
+  margin: 1em 0;
+  font-size: 1.2em;
 }
 
 .about img {
-  width: 300px;
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.about figcaption {
+  text-align: end;
 }
 /* Footer */
 
