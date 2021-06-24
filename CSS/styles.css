@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playball&family=Ubuntu&display=swap");
 @import url(/CSS/media.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -140,6 +142,56 @@ section {
   justify-content: center;
 
   background: center/ cover url(/img/Ingredients.jpg);
+}
+
+.cooking_style .landing_container {
+  background: rgba(0, 0, 0, 0.6);
+  margin: 5vw;
+  border-radius: 10px;
+  padding: 10vw;
+}
+
+.cooking_style h2 {
+  background: linear-gradient(to top right, red, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+  margin-bottom: 4vh;
+  width: fit-content;
+}
+
+.cooking_style p {
+  color: #fff;
+  line-height: 1.5em;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: right / cover url(/img/spices.jpg);
+}
+
+.about .landing_container {
+  background: rgba(255, 255, 255, 0.5);
+  margin: 5vw;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.about h2 {
+  color: red;
+}
+.about p {
+  width: fit-content;
+}
+
+.about img {
+  width: 300px;
 }
 /* Footer */
 
