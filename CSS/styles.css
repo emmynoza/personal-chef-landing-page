@@ -22,7 +22,6 @@ h6 {
 /* Header */
 .page_header {
   position: relative;
-  display: none;
 }
 
 /* Nav Bar mobile*/
@@ -40,6 +39,7 @@ h6 {
   justify-content: space-around;
   align-items: center;
   height: 80vh;
+  margin-top: 10vh;
 }
 
 .navbar_item {
@@ -99,6 +99,7 @@ h6 {
   background: red;
   color: white;
   font-family: "Playball", cursive;
+  cursor: pointer;
 }
 
 /* Sections */
@@ -116,6 +117,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .services .landing_container {
   background-color: rgba(255, 255, 255, 0.685);
@@ -203,10 +205,63 @@ section {
 .about figcaption {
   text-align: end;
 }
+
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background: center/cover url(/img/Arial_food.jpg);
+}
+
+.contact h2 {
+  color: red;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact .landing_container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input {
+  padding: 0.5em;
+}
+
+.contact form input,
+form textarea {
+  border-radius: 5px;
+  margin: 0.5em 0;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  padding: 0.5em 0;
+  font-size: 2em;
+  font-family: "ubuntu", cursive;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  background: red;
+}
+
 /* Footer */
 
 .page_footer {
   background-color: #0a0908;
   min-height: 5vh;
   color: #fff;
+  text-align: center;
 }
