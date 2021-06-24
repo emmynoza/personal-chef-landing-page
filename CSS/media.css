@@ -11,6 +11,29 @@
   }
 }
 
+@media (min-width: 550px) {
+  /* About section  */
+  main .about .landing_container {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  main .about h2 {
+    width: 100%;
+
+    align-self: stretch;
+    text-align: center;
+  }
+
+  main .about p {
+    width: 50%;
+  }
+  main .about figure {
+    width: 50%;
+    margin: 0;
+  }
+}
+
 @media (min-width: 800px) {
   .main_showcase .showcase_content h1 {
     font-size: 13vw;
@@ -38,6 +61,25 @@
 
   .navbar_list .navbar_item a:hover {
     font-size: 1.5rem;
+  }
+
+  /* about section */
+
+  main .about figure {
+    width: 302px;
+  }
+
+  main .about .landing_container {
+    max-width: 800px;
+  }
+
+  .about .landing_container p {
+    margin-right: 20px;
+  }
+
+  main .contact .landing_container {
+    width: 40vw;
+    padding: 2em;
   }
 }
 

@@ -121,18 +121,26 @@ section {
 }
 .services .landing_container {
   background-color: rgba(255, 255, 255, 0.685);
-
-  margin: 0 5vw;
-  padding: 5vh 7vw;
+  max-width: 80%;
+  margin: 5vh 5vw;
+  padding: 3vh 3vw;
   border-radius: 10px;
+}
+.services h2 {
+  margin-bottom: 0.5em;
+}
+
+.services h3 {
+  color: darkgreen;
+  font-size: 1.5em;
 }
 
 .services .landing_container p {
-  margin: 5vh;
+  margin: 1em;
 }
 
 .landing_container li {
-  margin: 5%;
+  margin-left: 1em;
   list-style: square;
 }
 
@@ -142,7 +150,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  align-items: center;
   background: center/ cover url(/img/Ingredients.jpg);
 }
 
@@ -150,7 +158,8 @@ section {
   background: rgba(0, 0, 0, 0.6);
   margin: 5vw;
   border-radius: 10px;
-  padding: 10vw;
+  padding: 10vh 5vw;
+  max-width: 80%;
 }
 
 .cooking_style h2 {
@@ -171,7 +180,7 @@ section {
 
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -181,8 +190,13 @@ section {
 .about .landing_container {
   background: rgba(255, 255, 255, 0.5);
   margin: 5vw;
-  padding: 50px;
+  padding: 1em;
   border-radius: 10px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about h2 {
@@ -193,7 +207,12 @@ section {
   line-height: 1.5em;
   font-weight: bold;
   margin: 1em 0;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+.about figure {
+  width: fit-content;
+  margin: 0 10%;
 }
 
 .about img {
@@ -224,6 +243,7 @@ section {
 }
 
 .contact .landing_container {
+  width: 80%;
   background: rgba(0, 0, 0, 0.6);
   padding: 1.5em;
   border-radius: 10px;
@@ -231,6 +251,8 @@ section {
 .contact form {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .contact form input {
@@ -241,6 +263,10 @@ section {
 form textarea {
   border-radius: 5px;
   margin: 0.5em 0;
+}
+
+form textarea {
+  width: 100%;
 }
 
 .submit-btn {
