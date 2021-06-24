@@ -164,6 +164,7 @@ section {
 
 .cooking_style h2 {
   background: linear-gradient(to top right, red, green);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 5px;
