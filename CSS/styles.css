@@ -55,7 +55,7 @@ h6 {
   color: white;
 }
 .navbar_item a:hover {
-  color: red;
+  color: yellow;
   font-size: 1.5em !important;
 }
 
@@ -310,8 +310,13 @@ form textarea {
 
 .nav_active {
   font-size: 1.5em;
-  text-decoration-line: underline;
+
   transition: 1000ms ease-in;
+}
+
+.nav_active a {
+  color: red !important;
+  text-decoration-line: underline;
 }
 
 @keyframes fadeIn {
