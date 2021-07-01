@@ -50,6 +50,7 @@ h6 {
 .navbar_item a {
   text-decoration: none;
   font-size: 2em;
+  color: white;
 }
 .navbar_item a:visited {
   color: white;
