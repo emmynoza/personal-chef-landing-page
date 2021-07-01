@@ -49,13 +49,14 @@ h6 {
 
 .navbar_item a {
   text-decoration: none;
+  font-size: 2em;
+}
+.navbar_item a:visited {
   color: white;
-  font-size: 2rem;
 }
 .navbar_item a:hover {
-  text-decoration: underline;
-  color: #36da21;
-  font-size: 2.5rem;
+  color: red;
+  font-size: 1.5em !important;
 }
 
 /* showcase */
@@ -291,4 +292,42 @@ form textarea {
   min-height: 5vh;
   color: #fff;
   text-align: center;
+}
+
+.landing_container {
+  animation: fadeOut ease-out 2s;
+}
+
+/* Active Class for Landing */
+
+.landing_active {
+  border: 5px solid red;
+
+  animation: fadeIn linear 1s;
+}
+
+/* active class for nav item */
+
+.nav_active {
+  font-size: 1.5em;
+  text-decoration-line: underline;
+  transition: 1000ms ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    border: 1px solid rgba(255, 0, 0, 0);
+  }
+  100% {
+    border: 5px solid red;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    border: 5px solid red;
+  }
+  100% {
+    border: 1px solid rgba(255, 0, 0, 0);
+  }
 }
