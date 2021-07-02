@@ -35,6 +35,13 @@
 }
 
 @media (min-width: 800px) {
+  .page_header .navbar {
+    display: block !important;
+  }
+  button .fas {
+    display: none;
+  }
+
   .main_showcase .showcase_content h1 {
     font-size: 13vw;
   }
@@ -92,3 +99,11 @@
     font-size: 4vw;
   }
 }
+
+/* hamburger menu */
+/* 
+@media (max-width: 800px){
+  .fas {
+    display: ;
+  }
+} */

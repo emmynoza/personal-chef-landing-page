@@ -67,3 +67,29 @@ containerArray.forEach((container) => {
     }
   });
 });
+
+// Hamburger menu
+
+const menu = document.getElementById("menu");
+const navbar = document.getElementById("navbar");
+
+menu.addEventListener("click", openMenu);
+
+function openMenu() {
+  if (menu.className === "menu menu-closed") {
+    menu.classList.remove("menu-closed");
+    menu.classList.add("menu-open");
+    menu.innerHTML = `<i class="fas fa-times"></i>`;
+
+    navbar.style.display = "block";
+  } else if (menu.className === "menu menu-open") {
+    //   close menu
+    menu.classList.remove("menu-open");
+    menu.classList.add("menu-closed");
+    menu.innerHTML = `<i class="fas fa-bars"></i>`;
+
+    navbar.style.display = "none";
+  } else {
+    navbar.style.display = "block";
+  }
+}
